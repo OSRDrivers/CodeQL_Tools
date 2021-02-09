@@ -35,7 +35,7 @@ call <your_directory>RunCodeQL.bat "$(solutionDir)" "$(MSBuildProjectFullPath)" 
 ```
 
 ### INSTALLING CodeQL for use with this command procedure 
-These instructions are based on the [WDK doc pages](https://docs.microsoft.com/en-us/windows-hardware/drivers/devtest/static-tools-and-codeql, which have some good examples of installation and use of CodeQL for drivers.
+These instructions are based on the [WDK doc pages](https://docs.microsoft.com/en-us/windows-hardware/drivers/devtest/static-tools-and-codeql), which have some good examples of installation and use of CodeQL for drivers.
 
 1) Create a "home" directory for your code CodeQL installation (for example,
 C:\CodeQL-Home)
