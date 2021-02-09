@@ -11,7 +11,7 @@ Can be run as a post-build step for a project from VS or can be run from **the V
 Parameters:
 
 ```
-     RunCodeQL.bat <FQP_base_project_dir> <FQP_to_project_file_to_Build> <name_of_project> \<target> \<configuration> <query_set>
+     RunCodeQL.bat <FQP_base_project_dir> <FQP_to_project_file_to_Build> <name_of_project> <target> <configuration> <query_set>
 ```
 
 Defaults:
