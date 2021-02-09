@@ -34,30 +34,11 @@
 ::	Post Build:
 ::	 call <your_directory>RunCodeQL.bat "$(solutionDir)" "$(MSBuildProjectFullPath)" "$(ProjectName)" "$(PlatformTarget)" "$(ConfigurationName)" "cpp-security-and-quality"
 ::
-:: INSTALLING CodeQL (based on the WDK doc pages here:
-:: https://docs.microsoft.com/en-us/windows-hardware/drivers/devtest/static-tools-and-codeql )
-::
-:: 1) Create a "home" directory for your code CodeQL installation (for example,
-::    C:\CodeQL-Home)
-::
-:: 2) Download the appropriate version of CodeQL from GitHub 
-:: (https://github.com/github/codeql-cli-binaries/releases/ ) and unzip it into
-::    a subdirectory of your CodeQL "home" directory (for example C:\CodeQL-Home\codeql).
-::
-:: 3) Clone the query suites including driver-specific queries
-:: (https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools.git ).
-::    into a subdirectory of the "home" directory (for example, 
-::    C:\CodeQL-Home\Windows-Driver-Developer-Supplemental-Tools)
-::
-:: 4) To view your results in anything like a reasonable way, you will need to
-::    use a SARIF viewer.  There's an add-in for Visual Studio that works just
-::    fine here: https://marketplace.visualstudio.com/items?itemName=WDGIS.MicrosoftSarifViewer
-::
-:: After running CodeQL, the SARIF file containing the results will be in the 
-:: \databases sub-directory of your CodeQL "home" directory.  The name of the
-:: file will be the name of your project.  If you're using the VS add-in we
-:: mentioned above, simply drag the SARIF file and drop it into your VS
-:: instance.
+:: After running CodeQL, the SARIF file containing your results will be in the 
+:: databases sub-directory of your CodeQL "home" directory (for example,
+:: C:\codeql-home\databases\).  The name of the file will be the name of your
+:: project.  If you're using the VS add-in to interpret the SARIF file, simply
+:: drag the SARIF file and drop it into your VS instance.
 ::
 :: >>>> Set the following to your CodeQL "home" directory:
 ::
